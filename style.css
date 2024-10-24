@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 250vh;
+}
+
+.slidersCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 500px;
+  margin: 0px auto;
+}
+
+.slider1 {
+  width: 200px;
+  max-height: 100vh !important;
+  display: flex;
+  align-items: center;
+  padding: 50px 0px;
+  margin-right: 100px;
+  /* overflow: hidden; */
+}
+.slider1 .slick-slide{
+  width: 80px !important;
+}
+.slider1 .slide1 {
+  width: 200px;
+  height: 18vh;
+  /* flex: 1; */
+}
+
+.slider1 .slide1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider1 .slick-current img{
+  border:2px solid black;
+}
+
+.slider2 {
+  width: 300px;
+}
+.slider2 .slide2 img {
+  /* height: 80vh; */
+  width: 100%;
+  object-fit: contain;
+}
+
+.slides-Counters {
+  display: flex;
+  align-items: baseline;
+  width: 300px;
+  justify-content: space-between;
+  font-size: 20px;
+  }
+
+.progress-bar-container {
+  width: 150px;
+  height: 8px;
+  background-color: #e0e0e0;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+ 
+}
+
+.progress-bar1 {
+  height: 100%;
+  background-color: black;
+  width: 0%;
+  /* Initially 0% width */
+  transition: width 0.2s ease;
+  /* Smooth transition */
+}
+.slide2-outer{
+  display: flex;
+  flex-direction: column;
+}
+
+
+  /* ----------Container and Content------------ */
+  .outer-container{
+    width: 300px;
+    position: relative;
+    margin: 50px auto;
+    border: 1px solid black;
+    height: 400px;
+  }
+  .container {
+    
+    padding: 20px;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+    /* Hide the default scrollbar */
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    font-size: 14px;
+    line-height: 1.6;
+    height: auto;
+    padding-right: 20px;
+    /* Space for the progress bar */
+  }
+
+  .progress-outer {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 5px;
+    height: 100%;
+    background-color: rgba(203, 203, 203, 0.7);
+   
+  }
+  .progress-bar {
+    width: 100%;
+    height: 0;
+    background-color: black;
+  }
+  .progress-btn{
+    color: white;
+    font-size: 20px;
+    padding: 0px 5px;
+    float: right;
+    margin-bottom: 10px;
+    border: none;
+    background-color: black;
+    border-radius: 2px;
+  }
